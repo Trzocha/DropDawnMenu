@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+#contener{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../tv.jpg');
+}
+#mainMenu{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 25rem;
+    height: 5rem;
+    background-color: #fff;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#mainMenu li{
+    list-style: none;
+}
+#firstLabel a,#arrow{
+    color: #808080;
+}
+.fa.fa-angle-up{
+    font-size: 3rem;
+    transition: 0.3s;
+    width: 2rem;
+}
+#arrow{
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translate(0,-50%) rotate(180deg);
+}
+#mainMenu:hover{
+    cursor: pointer;
+}
+.view{
+    transform: rotate(-180deg);
+}
+#subMenu{
+    position: absolute;
+    top:100%;
+    visibility: hidden;
+}
+#subMenu li:first-child{
+    margin-top: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+#subMenu li:last-child{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#subMenu li{
+    position: relative;
+    top:50%;
+    width: 25rem;
+    height: 5rem;
+    background-color: #fff;
+    border-bottom: .1rem solid  #808080;
+    border-left: .5rem solid #fff;
+    transition: 0.2s;
+    font-size: 1.3rem;
+}
+#subMenu li a{
+    color: #808080;
+}
+#subMenu li:hover{
+    background-color: #ededed;
+    border-left-color: #207ce5;
+}
+#subMenu li:hover a{
+    color: #616061;
+}
+#subMenu li:hover #triangle{
+    transition: 0.2s;
+    border-bottom-color: #ededed;
+}
+div a{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;   
+}
+#triangle{
+    position: absolute;
+    top:-20%;
+    right:7%;
+    border-left: 1.3rem solid transparent;
+    border-right: 1.3rem solid transparent;
+    border-bottom: 1.3rem solid #fff;
+    transition: 0.2s;
+}
